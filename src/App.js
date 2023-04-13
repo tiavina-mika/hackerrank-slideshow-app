@@ -1,10 +1,16 @@
-import "./styles.css";
+import Slides from "./components/Slides";
 
-export default function App() {
+const title = "Slideshow App";
+
+const App = ({ slides }) => {
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+    <div>
+      <h8k-navbar header={title}></h8k-navbar>
+      <div className="App">
+        <Slides slides={slides} />
+      </div>
     </div>
   );
-}
+};
+
+export default App;
